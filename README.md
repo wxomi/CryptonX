@@ -1,20 +1,22 @@
-Crypto Coin Tracker
-Welcome to Crypto Coin Tracker, a React app that allows you to easily track the current prices and chart data for various cryptocurrency coins.
+#Crypton-X
 
-Features
-Fetch data from a reliable API to get current prices and chart data for various coins
-Display current prices and chart data in an easy-to-read format
-Use ChakraUI to create a visually appealing interface
-Installation
-To get started, clone this repository and run npm install to install all necessary dependencies. Then, run npm start to start the development server.
+Crypton-X is a React app that fetches cryptocurrency data from an API and displays it in a visually appealing way. The app also includes a chart showing the changes in the cryptocurrency over time.
 
-Deployment
-This app is hosted on Vercel, so simply push any updates to the repository to deploy the latest version.
+##Features
+###Fetch data from a cryptocurrency API
+###Display data in a visually appealing way using Chakra UI
+###Show a chart of the cryptocurrency's changes over time using React
+###Hosted on Vercel for easy access
+###Installation
+###To run Crypton-X on your local machine, follow these steps:
 
-Credits
-This app was built with the help of the following technologies:
+##Clone the repository: git clone https://github.com/wxomi/crypton-x.git
+Install the dependencies: npm install
+Start the development server: npm start
+##Demo
+ 
+You can see a live demo of Crypton-X at [https://crypton-x.vercel.app/](https://crypton-x.vercel.app/).
 
-React
-ChakraUI
-Vercel
-Thank you to these amazing tools for making this app possible!
+##Credits
+Crypton-X was developed by Anshul.
+
