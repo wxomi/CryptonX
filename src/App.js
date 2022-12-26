@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import Header from './component/Header';
+import Home from './component/Home';
+import Coins from './component/Coins';
+import Exchanges from './component/Exchanges';
+import CoinDetails from './component/CoinDetails';
+import Footer from './component/Footer';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header></Header>
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/coins' element={<Coins></Coins>}></Route>
+        <Route path='/Exchanges' element={<Exchanges></Exchanges>}></Route>
+        <Route path='/coin/:id' element={<CoinDetails></CoinDetails>}></Route>
+      </Routes>
+      <Footer></Footer>
+    </Router>
   );
 }
 
